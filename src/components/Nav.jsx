@@ -26,7 +26,9 @@ export default function Nav() {
                   </DesktopNavLink>
                 </DesktopNav>
               </div>
-              <div className='lg:hidden'></div>
+
+              {/* Once this div is uncommented, creates issues */}
+              {/* <div className='lg:hidden'></div> */}
           </NavMenu>
           {/* <ul>
             <li className='border-b-2 border-zinc-300 w-full p-4'>

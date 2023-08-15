@@ -7,11 +7,10 @@ justify-content: space-between;
 align-items: center; 
 width: 83.333333%; 
 height: 3.5rem; 
-margin-left: auto;
-margin-right: auto;
+margin: 0 auto;
 /* width: 100%; */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     width: 100%;
   }
 `
@@ -31,13 +30,11 @@ color: #000;
 @media (min-width: 640px) {
 	font-size: 1.875rem;
     line-height: 2.25rem;
-    background-color: yellow;
   }
 
 @media (min-width: 768px) {
     font-size: 2.25rem;
     line-height: 2.5rem;
-    background-color: blue;
 }
 `
 export const DesktopNav = styled.ul `
@@ -60,7 +57,6 @@ export const DesktopNavLink = styled.li `
 `
 
 export const NavBG = styled.section `
-    /* background-color: #fff; */
-    background-color: purple;
+    background-color: #fff;
     color: #000;
 `
