@@ -10,3 +10,4 @@ Material SVG icons ~ icons (https://mui.com/material-ui/material-icons/)
 
 eslint
 
+styled-components
