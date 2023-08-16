@@ -19,7 +19,7 @@ export default function Nav() {
               <div>
                 <DesktopNav>
                   <DesktopNavLink>
-                    Home
+                    <Link to="/">Home</Link>
                   </DesktopNavLink>
                   <DesktopNavLink>
                     About
