@@ -1,27 +1,32 @@
 import './App.css'
 // import CloseIcon from '@mui/icons-material/Close';
 import {createBrowserRouter, RouterProvider } from "react-router-dom";
-// import Login from './pages/Login';
+
+import GlobalStyles from './styles/GlobalStyles';
+
 import Homepage from './pages/Homepage';
+import Login from './components/Login';
+import PageNotFound from './components/PageNotFound';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
-    // loader: rootLoader,
+    errorElement: <PageNotFound />,
     children: [
-      // {
-      //   path: "team",
-      //   element: <Team />,
-      //   loader: teamLoader,
-      // },
+    {
+      path: "login",
+      element: <Login />,
+    }
     ],
+
   },
 ]);
 
 function App() {
   return (
     <>
+      <GlobalStyles />
       <RouterProvider router={router} />
       {/* <CloseIcon /> */}
     </>

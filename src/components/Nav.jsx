@@ -1,5 +1,6 @@
-import { GlobalStyles } from "@mui/material"
+import  GlobalStyles  from "../styles/GlobalStyles"
 import {LogoName, DesktopNav,NavBG, DesktopNavLink, H1, NavMenu} from './Nav.styled.js';
+import { Link } from "react-router-dom";
 
 
 export default function Nav() {
@@ -10,7 +11,9 @@ export default function Nav() {
           <NavMenu>
               <div>
                   <H1>
-                    <LogoName>Car Dealership</LogoName>
+                    <LogoName>
+                      <Link to="/">Car Dealership</Link>
+                    </LogoName>
                   </H1>
               </div>
               <div>
@@ -22,7 +25,7 @@ export default function Nav() {
                     About
                   </DesktopNavLink>
                   <DesktopNavLink>
-                    New & Used Cars
+                    <Link to="Login">Login</Link>
                   </DesktopNavLink>
                 </DesktopNav>
               </div>
