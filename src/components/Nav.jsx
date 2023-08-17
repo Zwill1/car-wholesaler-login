@@ -22,9 +22,6 @@ export default function Nav() {
                     <Link to="/">Home</Link>
                   </DesktopNavLink>
                   <DesktopNavLink>
-                    About
-                  </DesktopNavLink>
-                  <DesktopNavLink>
                     <Link to="Login">Login</Link>
                   </DesktopNavLink>
                 </DesktopNav>

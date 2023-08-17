@@ -6,7 +6,7 @@ display: flex;
 justify-content: space-between; 
 align-items: center; 
 width: 83.333333%; 
-height: 3.5rem; 
+height: 6.5rem; 
 margin: 0 auto;
 /* width: 100%; */
 
@@ -47,7 +47,7 @@ padding-right: 1rem;
 ` 
 
 export const DesktopNavLink = styled.li `
-	padding: 1rem;
+	  padding: 1rem;
     font-weight: bold;
     list-style-type: none;
 
