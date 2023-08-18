@@ -20,6 +20,6 @@ export const LoginBox = styled.div`
   text-align: center;
 
   & h1 {
-    margin-bottom: 3.2rem;
+    margin-bottom: 0.5rem;
   }
 `
