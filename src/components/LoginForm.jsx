@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { StyledLoginForm, StyledForm,StyledFormRowDiv } from "./LoginForm.styled";
+import Button from '../ui/Button';
 
 export default function LoginForm() {
 
@@ -35,7 +36,7 @@ export default function LoginForm() {
             />
           </StyledFormRowDiv>
           <div>
-            {/* <Button type="primary">Login</Button> */}
+            <Button type="primary">Login</Button>
           </div>
         </StyledForm>
       </StyledLoginForm>
