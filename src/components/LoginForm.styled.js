@@ -23,4 +23,9 @@ export const StyledFormRowDiv = styled.div`
 export const StyledFormLabel = styled.label`
   font-weight: 600;
   text-align: left;
+  padding: 0px 10px;
+`;
+
+export const StyledFormInput = styled.input`
+  padding: 12px 10px;
 `;

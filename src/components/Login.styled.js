@@ -2,11 +2,15 @@ import { styled } from "styled-components";
 
 export const StyledLogin = styled.main`
   height: 100vh;
-  background-color: var(--color-red-800);
+  /* background-color: var(--color-red-800); */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4.8rem;
+  background: url("src/assets/images/car-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
 `;
 
 export const LoginBox = styled.div`
@@ -21,4 +25,9 @@ export const LoginBox = styled.div`
   & h1 {
     margin-bottom: 0.5rem;
   }
+`;
+
+export const RegisterLink = styled.span`
+  font-weight: 600;
+  color: #d64036;
 `;

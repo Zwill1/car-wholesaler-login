@@ -1,12 +1,11 @@
-import { Outlet } from "react-router-dom"
-import Nav from "../components/Nav"
+import { Outlet } from "react-router-dom";
+import Nav from "../components/Nav";
 
 export default function Homepage() {
-return (      
+  return (
     <>
-    <Nav />
-    <Outlet />
-    <p>dff</p>
+      <Nav />
+      <Outlet />
     </>
-)
+  );
 }
