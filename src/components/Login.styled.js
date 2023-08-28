@@ -1,14 +1,13 @@
-import {styled} from 'styled-components';
+import { styled } from "styled-components";
 
-
-export const StyledLogin = styled.main `
+export const StyledLogin = styled.main`
   height: 100vh;
   background-color: var(--color-red-800);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4.8rem;
-`
+`;
 
 export const LoginBox = styled.div`
   background-color: var(--color-grey-0);
@@ -22,4 +21,4 @@ export const LoginBox = styled.div`
   & h1 {
     margin-bottom: 0.5rem;
   }
-`
+`;

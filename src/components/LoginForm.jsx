@@ -1,14 +1,18 @@
 import { useState } from "react";
-import { StyledLoginForm, StyledForm,StyledFormRowDiv } from "./LoginForm.styled";
-import Button from '../ui/Button';
+import {
+  StyledLoginForm,
+  StyledForm,
+  StyledFormRowDiv,
+  StyledFormLabel,
+} from "./LoginForm.styled";
+import Button from "../ui/Button";
 
 export default function LoginForm() {
-
   // Filled for project showcase
   const [email, setEmail] = useState("admin@cardealership.com");
   const [password, setPassword] = useState("password");
 
-  function handleSubmit(e){
+  function handleSubmit(e) {
     e.preventDefault();
   }
 
@@ -17,7 +21,7 @@ export default function LoginForm() {
       <StyledLoginForm>
         <StyledForm onSubmit={handleSubmit}>
           <StyledFormRowDiv>
-            <label htmlFor="email">Email address</label>
+            <StyledFormLabel htmlFor="email">Email address</StyledFormLabel>
             <input
               type="email"
               id="email"
@@ -27,7 +31,7 @@ export default function LoginForm() {
           </StyledFormRowDiv>
 
           <StyledFormRowDiv>
-            <label htmlFor="password">Password</label>
+            <StyledFormLabel htmlFor="password">Password</StyledFormLabel>
             <input
               type="password"
               id="password"
@@ -41,5 +45,5 @@ export default function LoginForm() {
         </StyledForm>
       </StyledLoginForm>
     </>
-  )
+  );
 }
