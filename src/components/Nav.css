@@ -1,0 +1,23 @@
+.iconMenu {
+  width: 1.25rem;
+  font-size: 26px !important;
+}
+
+.navHide {
+  display: none;
+}
+
+.navMobile {
+  position: absolute;
+  z-index: 50;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .navMobile {
+    display: none;
+  }
+}

@@ -1,12 +1,11 @@
-import './App.css'
-// import CloseIcon from '@mui/icons-material/Close';
-import {createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import GlobalStyles from './styles/GlobalStyles';
+import GlobalStyles from "./styles/GlobalStyles";
 
-import Homepage from './pages/Homepage';
-import Login from './components/Login';
-import PageNotFound from './components/PageNotFound';
+import Homepage from "./pages/Homepage";
+import Login from "./components/Login";
+import PageNotFound from "./components/PageNotFound";
 
 const router = createBrowserRouter([
   {
@@ -14,12 +13,11 @@ const router = createBrowserRouter([
     element: <Homepage />,
     errorElement: <PageNotFound />,
     children: [
-    {
-      path: "login",
-      element: <Login />,
-    }
+      {
+        path: "login",
+        element: <Login />,
+      },
     ],
-
   },
 ]);
 
@@ -28,9 +26,9 @@ function App() {
     <>
       <GlobalStyles />
       <RouterProvider router={router} />
-      {/* <CloseIcon /> */}
+      <p>ff</p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

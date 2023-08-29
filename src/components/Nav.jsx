@@ -6,10 +6,21 @@ import {
   DesktopNavLink,
   H1,
   NavMenu,
+  IconDiv,
+  MobileNavMenu,
 } from "./Nav.styled.js";
 import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { useState } from "react";
+import "./Nav.css";
 
 export default function Nav() {
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
+
+  const handleClose = () => setNav(!nav);
+
   return (
     <>
       <GlobalStyles />
@@ -34,19 +45,26 @@ export default function Nav() {
           </div>
 
           {/* Once this div is uncommented, creates issues */}
-          {/* <div className='lg:hidden'></div> */}
+          <IconDiv onClick={handleClick}>
+            {!nav ? (
+              <MenuIcon className="iconMenu" />
+            ) : (
+              <CloseIcon className="iconMenu" />
+            )}
+          </IconDiv>
         </NavMenu>
-        {/* <ul>
-            <li className='border-b-2 border-zinc-300 w-full p-4'>
-                Home
-            </li>
-            <li className='border-b-2 border-zinc-300 w-full p-4'>
-                About
-            </li>
-            <li className='border-b-2 border-zinc-300 w-full p-4'>
-                New & Used Cars
-            </li>
-          </ul> */}
+        <ul className={!nav ? "navHide" : "navMobile"}>
+          <MobileNavMenu>
+            <Link to="/" onClick={handleClose}>
+              Home
+            </Link>
+          </MobileNavMenu>
+          <MobileNavMenu>
+            <Link to="login" onClick={handleClose}>
+              Login
+            </Link>
+          </MobileNavMenu>
+        </ul>
       </NavBG>
     </>
   );
