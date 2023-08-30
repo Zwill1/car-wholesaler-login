@@ -1,11 +1,9 @@
-import { Outlet } from "react-router-dom";
-import Nav from "../components/Nav";
+import FullWidthSection from "../components/FullWidthSection";
 
 export default function Homepage() {
   return (
     <>
-      <Nav />
-      <Outlet />
+      <FullWidthSection />
     </>
   );
 }

@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
-import "./Nav.css";
+import "../styles/Nav.css";
 
 export default function Nav() {
   const [nav, setNav] = useState(false);

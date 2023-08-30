@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const StyledLogin = styled.main`
-  height: 100vh;
+  height: 90vh;
   /* background-color: var(--color-red-800); */
   display: flex;
   align-items: center;
