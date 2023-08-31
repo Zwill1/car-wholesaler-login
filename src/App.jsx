@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import GlobalStyles from "./styles/GlobalStyles";
 
-import Layout from "./pages/Layout";
+import Layout from "./components/Layout";
 import Homepage from "./pages/Homepage";
 import Login from "./components/Login";
 import PageNotFound from "./components/PageNotFound";

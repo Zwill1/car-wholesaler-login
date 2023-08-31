@@ -1,10 +1,10 @@
 import { FullWidth } from "./FullWidthSection.styled";
-import TwoColumnWidth from "./twoColumnWidth";
+import ColumnWidth from "./ColumnWidth";
 
 export default function FullWidthSection() {
   return (
     <FullWidth>
-      <TwoColumnWidth />
+      <ColumnWidth />
     </FullWidth>
   );
 }
