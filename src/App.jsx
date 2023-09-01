@@ -7,6 +7,9 @@ import Layout from "./components/Layout";
 import Homepage from "./pages/Homepage";
 import Login from "./components/Login";
 import PageNotFound from "./components/PageNotFound";
+import Dashboard from "./pages/Dashboard";
+
+import LoggedInLayout from "./components/LoggedInLayout";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,19 @@ const router = createBrowserRouter([
         // Only render when login link is clicked on nav
         path: "login",
         element: <Login />,
+      },
+    ],
+  },
+  {
+    // Used for logged in users.
+    path: "/dashboard",
+    element: <LoggedInLayout />,
+    errorElement: <PageNotFound />,
+    children: [
+      {
+        //Main landing page after log in
+        path: "/dashboard",
+        element: <Dashboard />,
       },
     ],
   },

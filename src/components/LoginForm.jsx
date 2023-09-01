@@ -7,15 +7,24 @@ import {
   StyledFormInput,
 } from "./LoginForm.styled";
 import Button from "../ui/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   // Filled for project showcase
   const [email, setEmail] = useState("admin@cardealership.com");
   const [password, setPassword] = useState("password");
 
+  const navigate = useNavigate();
+
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (email && password) {
+      //implement auth to gain access to dashboard
+
+      //login(email, password);
+      navigate("/dashboard");
+    }
   }
 
   return (
@@ -43,7 +52,9 @@ export default function LoginForm() {
           </StyledFormRowDiv>
           <div>
             <Link to="/login">
-              <Button type="primary">Login</Button>
+              <Button type="primary" onClick={handleSubmit}>
+                Login
+              </Button>
             </Link>
           </div>
         </StyledForm>
