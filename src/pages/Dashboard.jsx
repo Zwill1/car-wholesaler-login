@@ -1,15 +1,21 @@
 /* eslint-disable react/prop-types */
 
-import data from "../data/PieData";
-import Pie from "../components/charts/PieChart";
-// import { MyResponsivePieCanvas } from "../components/charts/PieChart.js";
+import PieChart from "../components/charts/PieChart";
+import {
+  FullWidth,
+  Column1of2,
+  Column2of2,
+} from "../admin/layout/Columns.styled";
 
 export default function Dashboard() {
   return (
     <>
-      <div>Dashboardggggggg</div>
-      <Pie data={data} />
-      {/* <MyResponsivePieCanvas data={data} /> */}
+      <FullWidth>
+        <Column1of2 />
+        <Column2of2>
+          <PieChart />
+        </Column2of2>
+      </FullWidth>
     </>
   );
 }

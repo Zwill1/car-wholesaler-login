@@ -9,7 +9,7 @@ import Login from "./components/Login";
 import PageNotFound from "./components/PageNotFound";
 import Dashboard from "./pages/Dashboard";
 
-import LoggedInLayout from "./components/LoggedInLayout";
+import LoggedInLayout from "./admin/layout/LoggedInLayout";
 
 const router = createBrowserRouter([
   {
